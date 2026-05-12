@@ -40,7 +40,14 @@ This application is deployed on [Render](https://render.com) and uses [Aiven](ht
 
 3. **Set up environment variables**
    - Copy `.env.example` to `.env`
-   - Fill in your Aiven MySQL database credentials
+   - Fill in your Aiven MySQL database credentials (get these from your Aiven dashboard):
+     ```
+     DB_HOST=your-aiven-host
+     DB_USER=your-database-user
+     DB_PASSWORD=your-database-password
+     DB_NAME=your-database-name
+     DB_PORT=3306
+     ```
 
 4. **Run the application**
    ```bash
