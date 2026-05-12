@@ -74,6 +74,7 @@ This application is deployed on [Render](https://render.com) and uses [Aiven](ht
 3. Create a new Web Service
 4. Configure the service:
    - **Runtime**: Node
+   - **Branch**: main (ensure main is set as default branch on GitHub)
    - **Build Command**: (leave empty)
    - **Start Command**: `npm start`
 5. Add environment variables in Render dashboard:
@@ -83,6 +84,8 @@ This application is deployed on [Render](https://render.com) and uses [Aiven](ht
    - `DB_NAME`
    - `DB_PORT` (optional, defaults to 3306)
 6. Deploy the service
+
+**Note**: If your GitHub repository has `master` as the default branch, change it to `main` in your repository settings on GitHub.
 
 ## Database Schema
 
